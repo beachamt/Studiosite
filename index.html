@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peachtree Studio Space</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #444;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 0.75rem 1.5rem;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Peachtree Studio Space</h1>
+    <p>Vintage 70s/80s vibes meets modern flexibility — 24x24 creative garage studio</p>
+  </header>
+  <main>
+    <section class="section">
+      <h2>About the Studio</h2>
+      <p>Peachtree Studio Space offers a flexible photo studio in a 24x24 garage setting with standard backdrops and a full 1970s–1980s vintage set. Available for hourly rentals or full photo sessions with our in-house photographer.</p>
+    </section>
+
+    <section class="section">
+      <h2>Amenities</h2>
+      <ul>
+        <li>White Backdrop</li>
+        <li>Sandbags</li>
+        <li>Tables & Chairs</li>
+        <li>WiFi</li>
+        <li>Steamer</li>
+        <li>Sink</li>
+        <li>Lighting Equipment</li>
+        <li>Blackout Blinds</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Features</h2>
+      <ul>
+        <li>Natural Light</li>
+        <li>Restrooms</li>
+        <li>Kitchen</li>
+        <li>Dressing Room</li>
+        <li>Street Level Access</li>
+        <li>Wheelchair Accessible</li>
+        <li>Parking Space(s)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Rates</h2>
+      <p><strong>Studio Rental:</strong> $70/hour</p>
+    </section>
+
+    <section class="section">
+      <h2>Request a Booking</h2>
+      <form action="mailto:beachamt+studios@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="booking-type">Booking Type</label>
+        <select id="booking-type" name="booking-type">
+          <option>Studio Rental (BYO Photographer)</option>
+          <option>Session with In-House Photographer</option>
+        </select>
+
+        <label for="message">Tell us what you're looking for</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Send Booking Request</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
